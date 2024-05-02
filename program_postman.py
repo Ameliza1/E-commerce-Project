@@ -1,28 +1,25 @@
 import requests
 import json
 
+# Define the API endpoint URL
 url = "https://automationexercise.com/api/productsList"
 
-payload = {}
-headers = {
-  'X-API-Key': '{{token}}'
-}
+# Define the headers with the API key
+headers = {'X-API-Key': '{{token}}'}
 
-response = requests.request("GET", url, headers=headers, data=payload)
+# Make the GET request
+response = requests.request("GET", url, headers=headers)
 
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    # Convert the response to JSON format
+    json_response = response.json()
 
+    # Save the JSON response to a file with better formatting
+    with open('response.json', 'w') as file:
+        json.dump(json_response, file, indent=4)
 
-# Vérifiez si la requête a réussi (code 200) 
-if response.status_code == 200:  
-    # Convertissez la réponse en format JSON     
-    json_response = response.json()  
-    # Enregistrez la réponse JSON dans un fichier avec une meilleure mise en forme 
-    with open('response.json', 'w') as file:         
-      json.dump(json_response, file, indent=4)     
-    print("La réponse a été enregistrée dans response.json") 
-else:    
-    print("Erreur lors de la requête : ", response.status_code)
-
-#print(response.json)
-
+    print("The response has been saved to response.json")
+else:
+    print("Error during the request:", response.status_code)
 
