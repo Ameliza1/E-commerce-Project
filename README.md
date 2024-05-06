@@ -4,10 +4,15 @@ As part of my project work in preparation to become a QA Automation tester, This
 Then produce python scripts that could be executed in a vscode terminal to collect the same information as i got from using postman. Among the content i am exploiting on the e-commerce site are:
 
 All Products List
+
 All Brand List
+
 User account detail by email
+
 All price below Rs. 500
+
 Below are the step by step procedure I used to acomplish the given task.
+
 Workspace Creation
 Below is the processes I used to creat my workspace.
 On the home page click on workspace from the top left side
@@ -20,6 +25,7 @@ Your workspace is created
 Collection Creation
 
 Below is the processes I used to creat my collection.
+
 Click on the recently created workspace (in this case : datacollection)
 At the top left side Click on New
 Select collections
@@ -30,6 +36,7 @@ Your collections with the desired name is created
 Adding requests
 
 Below is the processes I used to add a new request
+
 Click on the recentely created collections
 At the extreme end click on the 3 horizontal dots ...
 Choose add request
