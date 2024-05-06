@@ -96,4 +96,12 @@ collect information in a json file with the code below
         print("Error during the request:", response.status_code)
 
 
-Finally i have my data in a json file.
+Finally I have my data in a json file.
+I create a repository in githab
+Create a main branch
+Checkout of the main to create a sub branch
+git add my files
+git commit with description
+git puch to the new branch.
+
+Now i have my work on my git space.
